@@ -64,7 +64,7 @@ with open('model.pkl', 'wb') as f:
 
 # Load the model
 with open('model.pkl', 'rb') as f:
-    model = pickle.load(f)
+    model = pickle.load(f,'rb')
 
 st.title('Vegetable Price Predictor')
 
