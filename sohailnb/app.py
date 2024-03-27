@@ -1,4 +1,4 @@
-import pickle5 as pickle
+import dill as pickle
 import requests
 import pandas as pd
 import numpy as np
