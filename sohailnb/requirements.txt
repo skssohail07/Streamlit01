@@ -43,7 +43,7 @@ google-pasta==0.2.0
 grpcio==1.56.0
 h5py==3.9.0
 idna==3.4
-importlib-metadata==6.7.0
+
 ipykernel==6.25.1
 ipython==8.14.0
 itsdangerous==2.1.2
