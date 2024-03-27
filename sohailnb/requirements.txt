@@ -3,3 +3,4 @@ streamlit_option_menu
 tensorflow
 requests
 dill
+scikit-learn
