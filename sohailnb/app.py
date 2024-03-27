@@ -1,4 +1,5 @@
 import pickle
+import requests
 import pandas as pd
 import numpy as np
 import streamlit as st
@@ -54,7 +55,16 @@ def preprocess_inp(data):
     
     return data
 
-model = pickle.load(open("sohailnb\\model\\model.pkl",'rb'))
+model_url = 'https://github.com/skssohail07/Streamlit01/blob/main/sohailnb/model/model.pkl'
+
+response = requests.get(model_url)
+
+with open('model.pkl', 'wb') as f:
+    f.write(response.content)
+
+# Load the model
+with open('model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
 st.title('Vegetable Price Predictor')
 
