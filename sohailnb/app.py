@@ -58,14 +58,14 @@ def preprocess_inp(data):
     
     return data
 
-model_url = 'https://github.com/skssohail07/Streamlit01/blob/main/sohailnb/model/model.pkl'
+model_url = 'https://github.com/skssohail07/Streamlit01/blob/main/sohailnb/model/model.h5'
 
 response = requests.get(model_url)
 
-with open('model123.pkl', 'wb') as f:
+with open('model123.h5', 'wb') as f:
     f.write(response.content)
 
-model = 'model123.pkl'
+model = load_model('model123.h5')
 
 st.title('Vegetable Price Predictor')
 
