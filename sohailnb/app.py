@@ -63,7 +63,7 @@ model_url = 'https://github.com/skssohail07/Streamlit01/blob/main/sohailnb/model
 
 response = requests.get(model_url)
 
-with open('model123.h5', 'wb') as f:
+with open('model123.pkl', 'wb') as f:
     f.write(response.content)
 
 model = load_model('model123.h5')
