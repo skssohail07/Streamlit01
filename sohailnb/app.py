@@ -64,8 +64,8 @@ response = requests.get(model_url)
 with open('model123.pkl', 'wb') as f:
     f.write(response.content)
 
-model_path = 'model123.pkl'
-model_layer = keras.layers.TFSMLayer(model_path, call_endpoint='serving_default')
+model = 'model123.pkl'
+
 st.title('Vegetable Price Predictor')
 
 col1,col2 = st.columns(2)
