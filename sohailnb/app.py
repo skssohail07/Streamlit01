@@ -1,5 +1,6 @@
 import dill as pickle
 import requests
+import sklearn
 import pandas as pd
 import numpy as np
 from tensorflow import keras
