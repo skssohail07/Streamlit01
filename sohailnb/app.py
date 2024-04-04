@@ -66,7 +66,7 @@ response = requests.get(model_url)
 with open('model123.pkl', 'wb') as f:
     f.write(response.content)
 
-model = pickle.load(open('model123.pkl', 'rb'))
+model = load_model('model123.pkl')
 
 st.title('Vegetable Price Predictor')
 
